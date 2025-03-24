@@ -35,7 +35,7 @@ document.addEventListener('DOMContentLoaded', function() {
         formulario.reset();
     });
     
-    // Validación personalizada para código de inventario
+    // Validación  para código de inventario
     document.getElementById('codigo').addEventListener('input', function(e) {
         const codigo = e.target.value.toUpperCase();
         e.target.value = codigo.replace(/[^A-Z0-9]/g, '');
