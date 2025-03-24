@@ -1,0 +1,107 @@
+/* Estilos generales */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f5f5f5;
+}
+
+.contenedor {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+h1 {
+    color: #2c3e50;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+/* Estilos del formulario */
+.formulario-inventario {
+    background-color: white;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    margin-bottom: 30px;
+}
+
+.grupo-formulario {
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.grupo-formulario label {
+    min-width: 150px;
+    font-weight: bold;
+    color: #34495e;
+}
+
+.grupo-formulario input[type="text"],
+.grupo-formulario input[type="number"] {
+    flex: 1;
+    padding: 8px;
+    border: 1px solid #bdc3c7;
+    border-radius: 4px;
+}
+
+.grupo-formulario input[type="checkbox"] {
+    width: 20px;
+    height: 20px;
+}
+
+button {
+    background-color: #3498db;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    width: 100%;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: #2980b9;
+}
+
+/* Estilos de la tabla */
+.tabla-inventario {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.tabla-inventario th {
+    background-color: #2c3e50;
+    color: white;
+    padding: 15px;
+    text-align: left;
+}
+
+.tabla-inventario td {
+    padding: 12px;
+    border-bottom: 1px solid #ecf0f1;
+    color: #34495e;
+}
+
+.tabla-inventario tr:nth-child(even) {
+    background-color: #f8f9fa;
+}
+
+.tabla-inventario tr:hover {
+    background-color: #f1f5f8;
+}
+
+.no_stock {
+    background-color: #ffe5e5 !important;
+    color: #c0392b !important;
+}
+
+.no_stock td {
+    border-bottom-color: #ffcccc;
+}

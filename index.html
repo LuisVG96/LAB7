@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Inventario Librería</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="contenedor">
+        <h1>Inventario de Libros</h1>
+        
+        <!-- Formulario de ingreso -->
+        <form id="formularioLibro" class="formulario-inventario">
+            <div class="grupo-formulario">
+                <label for="nombre">Nombre del libro:</label>
+                <input type="text" id="nombre" required>
+            </div>
+            
+            <div class="grupo-formulario">
+                <label for="autor">Autor:</label>
+                <input type="text" id="autor" required>
+            </div>
+            
+            <div class="grupo-formulario">
+                <label for="editorial">Editorial:</label>
+                <input type="text" id="editorial" required>
+            </div>
+            
+            <div class="grupo-formulario">
+                <label for="precio">Precio (USD):</label>
+                <input type="number" id="precio" step="0.01" min="0" required>
+            </div>
+            
+            <div class="grupo-formulario">
+                <label for="codigo">Código de Inventario:</label>
+                <input type="text" id="codigo" pattern="[A-Z0-9]{6}" required>
+            </div>
+            
+            <div class="grupo-formulario">
+                <label for="stock">En stock:</label>
+                <input type="checkbox" id="stock">
+            </div>
+            
+            <button type="submit">Agregar Libro</button>
+        </form>
+
+        <!-- Tabla de inventario -->
+        <table class="tabla-inventario">
+            <thead>
+                <tr>
+                    <th>Nombre</th>
+                    <th>Autor</th>
+                    <th>Editorial</th>
+                    <th>Precio</th>
+                    <th>Código</th>
+                    <th>Stock</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Datos iniciales -->
+                <tr>
+                    <td>Cien años de soledad</td>
+                    <td>Gabriel García Márquez</td>
+                    <td>Sudamericana</td>
+                    <td>$25.99</td>
+                    <td>ABC123</td>
+                    <td>Disponible</td>
+                </tr>
+                <tr class="no_stock">
+                    <td>Rayuela</td>
+                    <td>Julio Cortázar</td>
+                    <td>Alfaguara</td>
+                    <td>$19.99</td>
+                    <td>DEF456</td>
+                    <td>Agotado</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
